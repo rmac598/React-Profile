@@ -1,8 +1,11 @@
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
+  const navStyle = {
+    height: "150px",
+  }
   return (
-    <ul className="justify-content-end nav nav-tabs ">
+    <ul className="justify-content-end nav nav-fill"style= {navStyle}>
       <li className="nav-item">
         <a
           href="#about"
